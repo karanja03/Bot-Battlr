@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function BotArmyMember({bot, handleSuspend}){
+function BotArmyMember({bot, handleSuspend, handleBotDelete}){
     return(
         <div key={bot.key} className="botarmymembercard">
            <img src={bot.avatar_url} alt={bot.name}/> 
@@ -15,7 +15,7 @@ function BotArmyMember({bot, handleSuspend}){
             <p> DATE CREATED:  {bot.created_at}</p>
             <p> DATE UPDATED:  { bot.updated_at} </p>
             <button onClick={handleSuspend} className="suspend">SUSPEND</button>
-            <button>X</button>
+            <button  onClick={handleBotDelete}>X</button>
 
         </div>
     )

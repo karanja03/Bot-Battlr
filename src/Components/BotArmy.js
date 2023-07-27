@@ -1,8 +1,8 @@
-import React ,{useState}from "react";
+import React ,{useState, useEffect}from "react";
 import Bot from "./Bot";
 import BotArmyMember from "./BotArmyMember";
 
-function BotArmy({botArmy, setBotArmy}){
+function BotArmy({botArmy, setBotArmy, bot}){
 
     // const[nonSuspended, setNonSuspended]= useState([botArmy])
     function handleSuspend(id){
@@ -12,6 +12,30 @@ function BotArmy({botArmy, setBotArmy}){
         setBotArmy(newBotArmy)
         // setNonSuspended(newBotArmy);
     }
+
+    function handleServerDelete(deletedItem){
+         const revivedArmyBot=botArmy.filter((bot)=> bot.id !==deletedItem.id)
+         setBotArmy(revivedArmyBot);
+    }
+    function handleBotDelete(id){
+
+        console.log("Completely Deleted")
+        console.log(id)
+       
+            fetch(`http://localhost:8001/bots/${id}`,{
+                method:"DELETE",
+                 
+            })
+            .then ((response) =>{
+                if(response.ok){
+                handleServerDelete(id)
+            }else{
+                alert('ERROR DELETING THE BOT')
+            }
+        })
+       
+
+    }
 return(
     <div>
         <div>
@@ -20,7 +44,9 @@ return(
              <li key={bot.id}>
                 < BotArmyMember 
                 bot={bot} 
-                handleSuspend={()=> {handleSuspend(bot.id)}} /></li>
+                handleSuspend={()=> {handleSuspend(bot.id)}} 
+                handleBotDelete={()=> {handleBotDelete(bot.id)}} />
+                </li>
             ))}
             </ul>
         </div>
