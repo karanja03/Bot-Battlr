@@ -1,1 +1,55 @@
 
+.navpoint{
+    font-weight: 800;
+    text-align: center;
+    padding: 40px;
+    display: inline;
+    width: 100px;
+   margin-left: 20px;
+    background: purple;
+    color: white;
+    height: 0px;
+    
+    
+        
+}
+nav{
+display: flex;
+align-items: center; /* Center items vertically */
+justify-content: center; /* Center items horizontally */
+ height: 80vh;
+}
+
+.mainheading{
+    text-align: center;
+    position: relative;
+    top: 150px;
+    
+}
+
+.botlist{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 250px;
+}
+li{
+    width: 30%;
+
+}
+.botcard{
+    background-color: aqua;
+    margin: 10px;
+   
+}
+.botarmyrow{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 250px;
+}
+.botarmymembercard{
+    background-color:purple;
+    margin: 10px;
+   
+}
