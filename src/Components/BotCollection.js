@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect,useState } from "react";
 import Bot from "./Bot";
 import BotArmy from "./BotArmy";
+import SortBar from "./SortBar";
 
 
 function BotCollection({bots, setBots}){
@@ -32,6 +33,7 @@ useEffect(()=>{
     }
     return(
         <div>
+            <SortBar bots= {bots}  setBots = {setBots}/>
             <BotArmy  botArmy={botArmy} setBotArmy={setBotArmy}/>
             <ul className="botlist">
                 {bots.map((bot)=>(

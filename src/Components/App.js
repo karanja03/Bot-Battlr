@@ -4,10 +4,6 @@ import BotCollection from "./BotCollection";
 import { Route,Routes } from "react-router-dom";
 import Home from "./Home";
 import { useState } from "react";
- import BotArmy from "./BotArmy";
-
-
-
 function App() {
 
     const [bots, setBots]=useState([])

@@ -54,9 +54,12 @@ li{
    
 }
 
-.bot-item.chosen {
-    background-color: purple;
-    color: white;
+.bot-item.chosen button {
+    background-color: red;
+    color: black;
+    cursor: not-allowed;
+    font-weight: 800;
+    
   }
 
   .bot-item {
@@ -64,4 +67,39 @@ li{
     border: 1px solid blue;
     margin: 5px;
     cursor: pointer;
+  }
+  .addbutton{
+    padding: 10px;
+    margin-left: 60px;
+  }
+
+ .catchphrase{
+    font-size: small;
+ }
+ .suspend{
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 5px;
+    font-weight: 800;
+    font-size:small;
+    position: relative;
+    top: 25px;
+    margin-left: 10px;
+ }
+ .x{
+    background-color: red;
+    font-weight: 1000;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 5px;
+    margin-left: 250px;
+ }
+
+  .arrangement{
+    display: flex;
+    position: relative;
+    top: 10px;
+  }
+  .p{
+    margin-right: 20px;
   }
