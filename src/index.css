@@ -53,3 +53,15 @@ li{
     margin: 10px;
    
 }
+
+.bot-item.chosen {
+    background-color: purple;
+    color: white;
+  }
+
+  .bot-item {
+    padding: 10px;
+    border: 1px solid blue;
+    margin: 5px;
+    cursor: pointer;
+  }

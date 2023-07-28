@@ -4,9 +4,11 @@ import Bot from "./Bot";
 import BotArmy from "./BotArmy";
 
 
-function BotCollection({bots, setBots, handleClickBot}){
+function BotCollection({bots, setBots}){
     const [botArmy, setBotArmy]= useState([])
+   
 
+//fetching data
 useEffect(()=>{
     fetch(" http://localhost:8001/bots")
     .then ((r)=> r.json())
@@ -14,8 +16,12 @@ useEffect(()=>{
     {setBots(data)
        
     })
-    },[])
+    },[setBots])
 
+  
+
+
+    //adding a new bot member to the army
     function handleClickBot(id){
        console.log(id)
        const newBotMember=bots.find((bot) => bot.id === id);

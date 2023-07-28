@@ -1,5 +1,5 @@
-import React ,{useState, useEffect}from "react";
-import Bot from "./Bot";
+import React from "react";
+
 import BotArmyMember from "./BotArmyMember";
 
 function BotArmy({botArmy, setBotArmy, bot}){
@@ -14,8 +14,8 @@ function BotArmy({botArmy, setBotArmy, bot}){
     }
 
     function handleServerDelete(deletedItem){
-         const revivedArmyBot=botArmy.filter((bot)=> bot.id !==deletedItem.id)
-         setBotArmy(revivedArmyBot);
+         const updatedArmyBot=botArmy.filter((bot)=> bot.id !==deletedItem.id)
+         setBotArmy(updatedArmyBot);
     }
     function handleBotDelete(id){
 
@@ -28,9 +28,9 @@ function BotArmy({botArmy, setBotArmy, bot}){
             })
             .then ((response) =>{
                 if(response.ok){
-                handleServerDelete(id)
+                handleServerDelete({id})
             }else{
-                alert('ERROR DELETING THE BOT')
+                alert('BOT AL')
             }
         })
        
