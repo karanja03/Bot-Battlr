@@ -103,3 +103,17 @@ li{
   .p{
     margin-right: 20px;
   }
+
+  .sortpos{
+    margin-left: 1500px;
+  }
+
+  .sortby{
+    font-size: larger;
+    font-weight: 800;
+  }
+  .sortbot{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+  }

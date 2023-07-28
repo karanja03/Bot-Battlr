@@ -7,6 +7,9 @@ import SortBar from "./SortBar";
 
 function BotCollection({bots, setBots}){
     const [botArmy, setBotArmy]= useState([])
+    const [sortedBots, setSortedBots] = useState(bots);
+  const [selectedSort, setSelectedSort] = useState(null);
+
    
 
 //fetching data
@@ -31,9 +34,39 @@ useEffect(()=>{
        }
        
     }
+    function handleSort(sortType){
+        setSelectedSort(sortType)
+        let sortedBots=[...bots]
+        switch (sortType) {
+            case "health":
+              // Implement sorting by health logic here
+              sortedBots.sort((a, b) => a.health - b.health);
+              break;
+            case "damage":
+              // Implement sorting by damage logic here
+              sortedBots.sort((a, b) => a.damage - b.damage);
+              break;
+            case "armor":
+              // Implement sorting by armor logic here
+              sortedBots.sort((a, b) => a.armor - b.armor);
+              break;
+            default:
+              break;
+          }
+      
+          setSortedBots(sortedBots);
+        }
+        
+    
+
+    
     return(
         <div>
-            <SortBar bots= {bots}  setBots = {setBots}/>
+            <SortBar
+             bots= {bots}  
+             setBots = {setBots} 
+             handleSort={handleSort}
+              />
             <BotArmy  botArmy={botArmy} setBotArmy={setBotArmy}/>
             <ul className="botlist">
                 {bots.map((bot)=>(
@@ -57,6 +90,7 @@ useEffect(()=>{
            
         </div>
     )
-}
 
+                }
+                
 export default BotCollection;
