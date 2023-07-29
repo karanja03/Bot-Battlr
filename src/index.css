@@ -2,13 +2,13 @@
 .navpoint{
     font-weight: 800;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     display: inline;
     width: 100px;
    margin-left: 20px;
-    background: purple;
-    color: white;
-    height: 0px;
+    background:cyan;
+    color: black;
+    border-radius: 4px;
     
     
         
@@ -23,8 +23,13 @@ justify-content: center; /* Center items horizontally */
 .mainheading{
     text-align: center;
     position: relative;
-    top: 150px;
+    top: 200px;
+  color:turquoise;
+  font-size:xx-large;
     
+}
+.mainhome{
+  background-color: black;
 }
 
 .botlist{
@@ -38,7 +43,7 @@ li{
 
 }
 .botcard{
-    background-color: aqua;
+    background-color: gray;
     margin: 10px;
    
 }
@@ -49,7 +54,7 @@ li{
     margin-left: 250px;
 }
 .botarmymembercard{
-    background-color:purple;
+    background-color:aliceblue;
     margin: 10px;
    
 }
@@ -71,6 +76,7 @@ li{
   .addbutton{
     padding: 10px;
     margin-left: 60px;
+    background-color: aqua;
   }
 
  .catchphrase{
@@ -85,6 +91,7 @@ li{
     position: relative;
     top: 25px;
     margin-left: 10px;
+    background-color:mediumturquoise;
  }
  .x{
     background-color: red;
@@ -106,6 +113,7 @@ li{
 
   .sortpos{
     margin-left: 1500px;
+     padding-top: 15px;
   }
 
   .sortby{
@@ -116,4 +124,45 @@ li{
     text-align: center;
     margin: 10px;
     padding: 10px;
+    color: black;
+    background-color: aqua;
+    
   }
+
+  .home{
+    background-image: url('/public/homerobot.jpg');
+    background-repeat: no-repeat;
+   background-size: 60% 100%;
+   background-position: center;
+  }
+
+
+  .botcontainer{
+    background-color: black;
+  }
+
+  .sortby{
+    color: antiquewhite;
+  }
+  .sortbutton{
+    color: aqua;
+  }
+  .botarmyrow{
+   
+    width: 84%;
+  }
+  .final{
+    color: black;
+    text-align: center;
+  }
+  .finals{
+    background-color: aqua;
+    padding: 20px;
+  }
+  .choose{
+    color: aqua;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+  }
+  

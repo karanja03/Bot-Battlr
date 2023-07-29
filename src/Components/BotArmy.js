@@ -30,7 +30,7 @@ function BotArmy({botArmy, setBotArmy, bot}){
                 if(response.ok){
                 handleServerDelete({id})
             }else{
-                alert('BOT AL')
+                alert('BOT ALREADY DELETED')
             }
         })
        
@@ -38,9 +38,10 @@ function BotArmy({botArmy, setBotArmy, bot}){
     }
 return(
     <div>
-        <div>
+        <div className="botarmyplace">
+
             <ul  className="botarmyrow">
-            {botArmy.map((bot)=>(
+              {botArmy.map((bot)=>(
              <li key={bot.id}>
                 < BotArmyMember 
                 bot={bot} 

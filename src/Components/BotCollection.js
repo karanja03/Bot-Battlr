@@ -17,7 +17,9 @@ useEffect(()=>{
     fetch(" http://localhost:8001/bots")
     .then ((r)=> r.json())
     .then((data)=> 
-    {setBots(data)
+    {
+      setBots(data);
+      setSortedBots(data);
        
     })
     },[setBots])
@@ -39,15 +41,12 @@ useEffect(()=>{
         let sortedBots=[...bots]
         switch (sortType) {
             case "health":
-              // Implement sorting by health logic here
               sortedBots.sort((a, b) => a.health - b.health);
               break;
             case "damage":
-              // Implement sorting by damage logic here
               sortedBots.sort((a, b) => a.damage - b.damage);
               break;
             case "armor":
-              // Implement sorting by armor logic here
               sortedBots.sort((a, b) => a.armor - b.armor);
               break;
             default:
@@ -61,13 +60,15 @@ useEffect(()=>{
 
     
     return(
-        <div>
+        <div  className="botcontainer">
             <SortBar
              bots= {bots}  
              setBots = {setBots} 
              handleSort={handleSort}
               />
             <BotArmy  botArmy={botArmy} setBotArmy={setBotArmy}/>
+            <div >
+              <p className="choose"> CHOOSE YOUR BOT ARMY</p>
             <ul className="botlist">
                 {sortedBots.map((bot)=>(
                    <li key={bot.id}>
@@ -87,7 +88,10 @@ useEffect(()=>{
                 ))}
 
             </ul>
-           
+            </div>
+            <div className="finals">
+            <p className="final">  @ WAMBUI KARANJA 2023</p>
+            </div>
         </div>
     )
 
