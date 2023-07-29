@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+#  BOT BATTLR - CREATE AND MANAGE YOUR BOT ARMY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Bot Ballr, a thrilling and interactive web application that allows you to build and command your very own Bot Army. With Bot Ballr, you can choose the most powerful bots, suspend those who need rest, or even eliminate bots completely from your formidable army.
 
-## Available Scripts
+## TABLE OF CONTENTS
+1. Introduction
+ 2. Getting Started
+    Prerequisites
+    Installation
+    Starting the Development Server
+3. Components
+4. Usage
+5. Bot Management
+    Adding a Bot
+    Suspending a Bot
+    Deleting a Bot
+6. License
 
-In the project directory, you can run:
 
-### `npm start`
+  ## Introduction
+Bot Ballr is a React-based web application designed to provide you with the ultimate experience of creating and commanding your very own Bot Army. The application is built to be visually captivating and user-friendly, allowing you to manage your bots efficiently.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ ## GETTING STARTED
+   ### Prerequisites
+Before you start using Bot Ballr, ensure that you have the following prerequisites installed on your machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Node.js: Download and Install Node.js
 
-### `npm test`
+2. npm (Node Package Manager): Normally comes bundled with Node.js installation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## INSTALLATION
 
-### `npm run build`
+1. Clone the repository or download the source code.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+      git clone <repository-url>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install the required dependencies using npm.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+      npm install
 
-### `npm run eject`
+  ## STARTING THE DEVELOPMENT SERVER
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  1. To run the development server, use the following command:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Bot Ballr will be accessible at http://localhost:3000/ in your web browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## COMPONENTS
 
-## Learn More
+Bot Ballr is composed of the following main components:
+1. APP:  The root component that handles the application's structure and routing.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. BOTCOLLECTION: This Component is in-charge of rendering the bots to the UI.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. BOT: This component is in-charge of having the information  of each bot eg name,health,armor etc.
 
-### Code Splitting
+4. BOTARMY: This component is in-charge of rendering the bot-army components chosen from the bot collection.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. BOTARMYMEMBER: This component is in-charge of rendering each bot chosen from the bot collection.
 
-### Analyzing the Bundle Size
+6. NAVBAR: This is component is in-charge of rendering the navigation componets;Home and BotCollection.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+7. HOME: This componet is in-charge of the home introduction paragraph.
 
-### Making a Progressive Web App
+8. SortBar: This Component is in-charge of the sort paragraphs that help in sorting
+    
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+##  SUSPENDING A BOT
+If a bot needs a break or is temporarily out of commission, you can suspend it:
 
-### Advanced Configuration
+1. Locate the bot you wish to suspend in your Bot Army list.
+2. Click the "Suspend" button next to the bot's details.
+3. The bot will now be marked as "Suspended" and will be temporarily inactive.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## DELETING A BOT
 
-### Deployment
+In case a bot is no longer needed or has become obsolete, you can delete it completely:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Locate the bot you wish to delete in your Bot Army list.
+2. Click the "X" button next to the bot's details.
+3. The bot will be removed from your army permanently.
 
-### `npm run build` fails to minify
+## LICENSE
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
+
+## CONTACT US
+
+Thank you for choosing Bot Ballr! We hope you enjoy building and commanding your Bot Army like never before. Should you have any questions or feedback, please email me through:
+
+<wambuik03@gmail.com>
+
+
+
+ 
+       
