@@ -1,4 +1,5 @@
-#  BOT BATTLR - CREATE AND MANAGE YOUR BOT ARMY
+#  BOT BATTLR 
+# CREATE AND MANAGE YOUR BOT ARMY
 
 Welcome to Bot Ballr, a thrilling and interactive web application that allows you to build and command your very own Bot Army. With Bot Ballr, you can choose the most powerful bots, suspend those who need rest, or even eliminate bots completely from your formidable army.
 
