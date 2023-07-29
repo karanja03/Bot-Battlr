@@ -69,7 +69,7 @@ useEffect(()=>{
               />
             <BotArmy  botArmy={botArmy} setBotArmy={setBotArmy}/>
             <ul className="botlist">
-                {bots.map((bot)=>(
+                {sortedBots.map((bot)=>(
                    <li key={bot.id}>
                     <Bot 
                    id={bot.id} 
