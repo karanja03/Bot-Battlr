@@ -65,6 +65,38 @@ Bot Ballr is composed of the following main components:
 7. HOME: This componet is in-charge of the home introduction paragraph.
 
 8. SortBar: This Component is in-charge of the sort paragraphs that help in sorting
+
+   ## SCREENSHOTS
+
+   ## HOMEPAGE
+
+   ![Screenshot from 2023-07-29 14-14-57](https://github.com/karanja03/Bot-Battlr/assets/134950124/d2ed60a6-9e48-4526-a6d1-d9843ffe82c1)
+
+    ## BOTS
+    
+![Screenshot from 2023-07-29 14-15-27](https://github.com/karanja03/Bot-Battlr/assets/134950124/d14b9df8-48c9-48fb-ac20-d954080235c8)
+
+   ## BOTS2
+
+
+![Screenshot from 2023-07-29 14-18-34](https://github.com/karanja03/Bot-Battlr/assets/134950124/12dbb3f4-d709-44ee-a697-438ccae25233)
+
+  ##  BOTS3
+
+  ![Screenshot from 2023-07-29 14-18-43](https://github.com/karanja03/Bot-Battlr/assets/134950124/28a55c43-b49f-4586-a0e4-dd61a170fb21)
+
+ ## BOT ARMY 
+
+ ![Screenshot from 2023-07-29 14-20-56](https://github.com/karanja03/Bot-Battlr/assets/134950124/2cba3c0e-2c1d-4cd1-b414-a963266cccae)
+
+##BOT ARMY2
+
+![Screenshot from 2023-07-29 14-21-58](https://github.com/karanja03/Bot-Battlr/assets/134950124/d516f355-5a0b-4a95-8f96-f1e886a82736)
+
+## SUSPENDING AND DELETING
+
+![Screenshot from 2023-07-29 14-20-28](https://github.com/karanja03/Bot-Battlr/assets/134950124/e7227fde-8b64-4c20-a79d-a21d73c92111)
+
     
 
 ##  SUSPENDING A BOT
