@@ -17,13 +17,13 @@ nav{
 display: flex;
 align-items: center; /* Center items vertically */
 justify-content: center; /* Center items horizontally */
- height: 80vh;
+ height: 70vh;
 }
 
 .mainheading{
     text-align: center;
     position: relative;
-    top: 200px;
+    top: 190px;
   color:turquoise;
   font-size:xx-large;
     
