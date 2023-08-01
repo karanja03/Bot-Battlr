@@ -14,7 +14,7 @@ function BotCollection({bots, setBots}){
 
 //fetching data
 useEffect(()=>{
-    fetch(" http://localhost:8001/bots")
+    fetch(" https://bot-serverss.onrender.com")
     .then ((r)=> r.json())
     .then((data)=> 
     {
