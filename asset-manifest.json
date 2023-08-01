@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Bot-Battlr/static/css/main.be818303.css",
+    "main.js": "/Bot-Battlr/static/js/main.01da7f6c.js",
+    "static/media/homerobot.jpg": "/Bot-Battlr/static/media/homerobot.b04a6431eab3bbc097ca.jpg",
+    "index.html": "/Bot-Battlr/index.html",
+    "main.be818303.css.map": "/Bot-Battlr/static/css/main.be818303.css.map",
+    "main.01da7f6c.js.map": "/Bot-Battlr/static/js/main.01da7f6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be818303.css",
+    "static/js/main.01da7f6c.js"
+  ]
+}
